@@ -48,7 +48,6 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(nowPosition);
 }
 let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getPosition);
 function showWeatherCondition(response) {
   let temperature = Math.round(response.main.temp);
   let icon = document.querySelector("#icon");
